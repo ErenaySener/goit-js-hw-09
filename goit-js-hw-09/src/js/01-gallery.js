@@ -4,7 +4,8 @@ import { images } from "./images.js";
 globalThis.global = globalThis;
 
 const mod = await import("simplelightbox");
-const SimpleLightboxCtor = mod.default ?? mod;
+
+const SimpleLightboxCtor = mod.default?.default ?? mod.default ?? mod;
 
 const galleryEl = document.querySelector(".gallery");
 

@@ -2,9 +2,12 @@ import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
 
 export default defineConfig({
+  root: 'src',
+
   define: {
     global: 'globalThis',
   },
+
   base: '/goit-js-hw-09/',
   build: {
     rollupOptions: {
